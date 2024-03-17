@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "865405077924",
+    "project_id": "hit-shoppingapp",
+    "storage_bucket": "hit-shoppingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865405077924:android:7d55143ee5c9753dbed931",
+        "android_client_info": {
+          "package_name": "hit.androiscourse.shoppingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBey3tgE_AOw8zwDsGiR3ewRC1q4qogk-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="hit.androiscourse.shoppingapp.fragments.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentShop"
+            app:destination="@id/fragmentShop" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="hit.androiscourse.shoppingapp.fragments.FragmentSignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_fragmentSignUp_to_fragmentShop"
+            app:destination="@id/fragmentShop" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentShop"
+        android:name="hit.androiscourse.shoppingapp.fragments.FragmentShop"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_fragmentShop_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCart"
+        android:name="hit.androiscourse.shoppingapp.fragments.FragmentCart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentShop"
+            app:destination="@id/fragmentShop" />
+    </fragment>
+</navigation>
